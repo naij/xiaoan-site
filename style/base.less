@@ -1,0 +1,187 @@
+.retina (@bg1, @bg2) {
+  background: url(@bg1);
+  background-image: -webkit-image-set(url(@bg1) 1x,url(@bg2) 2x);
+  background-image: -moz-image-set(url(@bg1) 1x,url(@bg2) 2x);
+  background-image: -ms-image-set(url(@bg1) 1x,url(@bg2) 2x);
+  background-image: -o-image-set(url(@bg1) 1x,url(@bg2) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**
+ * 公用变量
+ **/
+@color-orange: #ff6600;
+@color-green: #44b549;
+@color-blue: #2980b9;
+@color-red: #ef3000;
+@color-yellow: #fcc232;
+@color-c: #ccc;  // 20%
+@color-l: #999;  // 40%
+@color-m: #666;  // 60%
+@color-d: #333;  // 80%
+
+// 品牌色
+@color-brand: #ff6600;
+@color-brand-hover: #ff6600;
+// 选中颜色
+@color-selected: #FF8041;
+// 主题边框色
+@color-border:#E2E2E9;
+
+/**
+ * iconfont
+ **/
+@import url("//at.alicdn.com/t/font_1388769_3rgltrpzmk8.css");
+
+/**
+ * 链接定义
+ **/
+a {
+  color: #454545;
+  text-decoration: none;
+}
+a:hover {
+  color: @color-brand;
+}
+
+/**
+ * 清除浮动
+ **/
+.clearfix {
+  & {
+    *zoom: 1;
+  }
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+/**
+ * 全局可用的颜色
+ **/
+.color-brand {
+  color: @color-brand;
+}
+.color-green {
+  color: @color-green;
+}
+.color-blue {
+  color: @color-blue;
+}
+.color-red {
+  color: @color-red;
+}
+.color-orange {
+  color: @color-orange;
+}
+.color-yellow {
+  color: @color-yellow;
+}
+
+/**
+ * 浅到深的字体颜色
+ **/
+.color-c {
+  color: @color-c
+}
+.color-l {
+  color: @color-l
+}
+.color-m {
+  color: @color-m
+}
+.color-d {
+  color: @color-d
+}
+
+
+.color-ff6600 {
+  color: #ff6600;
+}
+.color-f89a0d {
+  color: #f89a0d;
+}
+
+/**
+ * 浮动
+ **/
+.fl {float: left; *display: inline;}
+.fr {float: right; *display: inline;}
+
+.pointer {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+/**
+ * 外边距
+ **/
+.mt5 {margin-top: 5px;}
+.mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt90 {margin-top: 90px;}
+.mt100 {margin-top: 100px;}
+
+.mr5 {margin-right: 5px;}
+.mr10 {margin-right: 10px;}
+.mr15 {margin-right: 15px;}
+.mr20 {margin-right: 20px;}
+.mr30 {margin-right: 30px;}
+.mr50 {margin-right: 50px;}
+.mr60 {margin-right: 60px;}
+.mr90 {margin-right: 90px;}
+.mr100 {margin-right: 100px;}
+
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.mb60 {margin-bottom: 60px;}
+.mb90 {margin-bottom: 90px;}
+.mb100 {margin-bottom: 100px;}
+
+.ml5 {margin-left: 5px;}
+.ml10 {margin-left: 10px;}
+.ml15 {margin-left: 15px;}
+.ml20 {margin-left: 20px;}
+.ml30 {margin-left: 30px;}
+.ml40 {margin-left: 40px;}
+.ml50 {margin-left: 50px;}
+.ml60 {margin-left: 60px;}
+.ml90 {margin-left: 90px;}
+.ml100 {margin-left: 100px;}
+
+// 字体大小
+.f12 {font-size: 12px;}
+.f14 {font-size: 14px;}
+.f16 {font-size: 16px;}
+.f18 {font-size: 18px;}
+.f20 {font-size: 20px;}
+.f22 {font-size: 22px;}
+.f24 {font-size: 24px;}
+.f26 {font-size: 26px;}
+.f32 {font-size: 32px;}
+.f40 {font-size: 40px;}
+.f48 {font-size: 48px;}

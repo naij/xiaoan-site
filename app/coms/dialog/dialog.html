@@ -1,0 +1,9 @@
+<div class="dialog-backdrop dialog-anim-mask" style="display: block;z-index:{{zIndex-1}}" id="dialog_mask_{{viewId}}"></div>
+<div class="dialog-scroll-cnt" style="z-index:{{zIndex}};">
+  <div class="dialog dialog-anim-body" id="dialog_body_{{viewId}}" style="left:{{left}}px;top:{{top}}px;width:{{width}}px;height:{{height}}px;">
+    <div mx-click="close()" class="dialog-close {{ closable ? '' : 'none' }}"></div>
+    <div class="dialog-content dialog-content-ext" id="cnt_{{viewId}}">
+      <div class="loading loading-ext"><span></span></div>
+    </div>
+  </div>
+</div>

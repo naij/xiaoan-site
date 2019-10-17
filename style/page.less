@@ -1,0 +1,156 @@
+// 幻灯片
+.unslider {
+  position: relative;
+  overflow: auto;
+  margin-bottom: 50px;
+
+  .slider {
+    ul {
+      position: relative;
+    }
+    li {
+      float: left;
+      min-height: 580px;
+      color: #fff;
+
+      .content {
+        width: 1190px;
+        margin: 140px auto;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .sub-title {
+        font-size: 18px;
+      }
+    }
+  }
+  .unslider-nav {
+    position: absolute;
+    left: 48%;
+    right: 0;
+    bottom: 36px;
+    z-index: 9999;
+
+    ol {
+      height: 10px;
+    }
+    li {
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      text-indent: -999em;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      opacity: .4;
+      transition: background .5s, opacity .5s;
+    }
+    li.unslider-active {
+      background: #ff6600;
+      opacity: 1;
+    }
+  } 
+}
+
+// 核心产品
+.product {
+  width: 1190px;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    margin: 0 40px;
+  }
+  .icon,
+  .title {
+    text-align: center;
+  }
+  .iconfont:before {
+    font-size: 100px;
+  }
+  .icon {
+    line-height: 1.2;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .description {
+    text-align: center;
+  }
+}
+
+// 案例展示
+.case-show {
+  width: 1190px;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  li {
+    margin-bottom: 40px;
+  }
+  .img {
+    margin-bottom: 20px;
+    img {
+      width: 370px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+// 关于我们
+.about-us {
+  .bd {
+    background-color: #0c1234;
+  }
+  .inner-bd {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #fff;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+  .description {
+    width: 50%;
+    padding-right: 20px;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .history {
+    width: 50%;
+    padding-left: 20px;
+
+    .row {
+      margin-bottom: 30px;
+    }
+    .date {
+      font-size: 18px;
+      font-weight: bold;
+      width: 80px;
+      float: left;
+      line-height: 1.2;
+    }
+    .event {
+      font-size: 12px;
+      margin-left: 80px;
+    }
+  }
+}
